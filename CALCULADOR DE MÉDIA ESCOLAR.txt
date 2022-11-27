@@ -1,0 +1,167 @@
+algoritmo "Calcular médias escolares"
+VAR
+vet1: vetor[1..80] de caractere
+vett: vetor [1..80] de real
+vet: vetor [1..80] de caractere
+nome, S, p,w: caractere
+m, nota, n,mt: real
+Q,a, conta,cont: inteiro
+ PROCEDIMENTO comeco()
+ INICIO
+ PARA a de 1 ate q faca
+  LimpaTela
+    escreval("             .....    ESCOLA SANTA PACIÊNCIA   .....       ")
+    escreval("                         Calculando média                   ")
+    escreval()
+    escreval("=============================")
+    escreva("Digite o nome do ",a,"º aluno: ")
+    leia(vet[a])
+     se vet[a] = vet1[1] entao
+      repita
+      escreval("Nome já digitado: ")
+       leia(vet[a])
+        ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+        senao
+         se vet[a] = vet1[2] entao
+          repita
+      escreval("Nome já digitado: ")
+      leia(vet[a])
+       ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+            senao
+             se vet[a] = vet1[3] entao
+              repita
+      escreval("Nome já digitado: ")
+      leia(vet[a])
+        ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+                senao
+                 se vet[a] = vet1[4] entao
+                  repita
+      escreval("Nome já digitado: ")
+      leia(vet[a])
+        ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+                    senao
+                   se vet[a] = vet1[5] entao
+                  repita
+      escreval("Nome já digitado: ")
+      leia(vet[a])
+        ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+                senao
+               se vet[a] = vet1[6] entao
+              repita
+      escreval("Nome já digitado: ")
+      leia(vet[a])
+        ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+            senao
+           se vet[a] = vet1[7] entao
+          repita
+      escreval("Nome já digitado: ")
+      leia(vet[a])
+       ate (vet[a] <> vet1[1]) e (vet[a] <> vet1[2]) e (vet[a] <> vet1[3]) e (vet[a] <> vet1[4]) e (vet[a] <> vet1[5]) e (vet[a] <> vet1[6]) e (vet[a] <> vet1[7]) e (vet[a] <> vet1[8]) e (vet[a] <> vet1[9]) e (vet[a] <> vet1[10])
+       fimse
+      fimse
+     fimse
+    fimse
+   fimse
+  fimse
+ fimse
+vet1[a] <- vet[a]
+   n <- 0
+   M <- 0
+   para cont de 1 ate 4 faca
+    Limpatela
+    escreval("             .....    ESCOLA SANTA PACIÊNCIA   .....       ")
+    escreval("                         Calculando média                   ")
+    escreval("                     Calculando nota de ",vet[a])
+    escreval()
+    escreval("                        ",cont,"º BIMESTRE")
+    escreva("                       Nota do aluno:")
+    leia(nota)
+    N <- n + nota
+   fimpara
+    M <- n / 4
+    vett[a] <- M
+      mt <- mt + m
+ fimpara
+MT <- mt / Q
+LimpaTela
+se (p = "Fundamental") entao
+   escreval("                  Turma ",S,"º ano do ensino Fundamental")
+   escreval(" I-------------------------------------------------------------I")
+   escreval("                     Média da Turma: ",mt:1:2,"                    ")
+    SE mt >= 6 entao
+      escreval("                  A Turma ficou acima da média")
+    senao
+      escreval("                  A turma ficou abaixo da média")
+    fimse
+escreval()
+escreval("---------------------------------------|")
+para cot de 1 ate q faca
+ se vett[cot] <> 0 entao
+  se vett[cot] >= 6 entao
+   escreva("Média do aluno ",vet[a],": ",vett[a]:1:1)
+   escreval(" Aprovado!")
+   senao
+   escreva("Média do aluno ",vet[a],": ",vett[a]:1:1)
+   escreval(" Reprovado!")
+  fimse
+fimse
+escreval("---------------------------------------|")
+fimpara
+fimse
+se (p = "Médio") entao
+   escreval("                   Turma ",S,"º ano do ensino Médio")
+   escreval(" I-------------------------------------------------------------I")
+   escreval("                     Média da Turma: ",mt:1:2,"                    ")
+    SE mt >= 6 entao
+      escreval("                  A Turma ficou acima da média")
+    senao
+      escreval("                  A Turma ficou abaixo da média")
+    fimse
+escreval()
+escreval("---------------------------------------|")
+para cot de 1 ate q faca
+ se vett[cot] <> 0 entao
+  se vett[cot] >= 6 entao
+   escreva("Média do aluno ",vet[a],": ",vett[a]:1:1)
+   escreval(" Aprovado!")
+   senao
+   escreva("Média do aluno ",vet[a],": ",vett[a]:1:1)
+   escreval(" Reprovado!")
+  fimse
+fimse
+escreval("---------------------------------------|")
+fimpara
+FIMSE
+fimprocedimento
+inicio
+escreval()
+escreval("             .....    ESCOLA SANTA PACIÊNCIA   .....       ")
+escreval("                       %CALCULADOR DE MÉDIA%               ")
+escreval()
+escreval("                      Qual a série escolar?: ")
+escreva("                             R= ")
+leia(S)
+LimPaTela
+escreval()
+escreval("             .....    ESCOLA SANTA PACIÊNCIA   .....       ")
+escreval("                       %CALCULADOR DE MÉDIA%               ")
+escreval()
+escreval("                    Ensino Médio ou Fundamental?")
+escreva("                             R= ")
+leia(P)
+se (p <> "Médio") e (p <> "Fundamental") entao
+repita
+escreval("Palavra Irregular, Digite corretamente")
+leia(p)
+ate (p = "Médio") ou (p = "Fundamental")
+fimse
+LimpaTela
+escreval()
+escreval("             .....    ESCOLA SANTA PACIÊNCIA   .....       ")
+escreval("                       %CALCULADOR DE MÉDIA%               ")
+escreval()
+escreval("                  Quantos alunos tem na turma ", S,"º ano")
+escreva("                               R= ")
+leia(Q)
+comeco()
+fimalgoritmo
